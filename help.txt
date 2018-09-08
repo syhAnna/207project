@@ -1,0 +1,33 @@
+=============================== Note ========================================
+We had a typo before, and we found it after the deadline.
+We have emailed Professor Paul, and he approved us to push it again after the deadline to fix the typo and let us add this extra note.
+So we have changed "javac -cp lib/junit-jupiter-api-5.0.jar */*.java" to
+"javac -cp lib/junit-jupiter-api-5.0.0.jar */*.java"
+===============================================================================
+1. To run our application
+    # Find the directory where you cloned our git repository
+    # Then copy and paste the following instructions into the terminal
+
+    cd group_0546
+    cd phase2
+    cd src
+    javac -cp lib/junit-jupiter-api-5.0.0.jar */*.java
+    java view_control.ManipulationManagerScene
+
+2. To run unit test
+    Create a intellij project in group_0546
+    Find phase2/src/test
+    Open CollisionTest.java, or ImageFileTest.java, or TagManager.java
+    Import junit5
+    Run
+
+3. Some notes for running our application
+    1. "Get All Log History" -- get log histories of all image files
+    2. "Add Tag", "Delete Tag", "Select Old Tag(s)", "Rename", "Move To", "Get Log History" on the bottom bar
+        are for current image file
+        "Show Current Directory" -- open the directory containing current image file
+    3. Tag Set is on the right side
+        "+" -- add tags to Tag Set
+        "-" -- choose tags then click it to remove them from tag set
+        "Add Tag to Image File" to add selected tags to current image file
+        "Show Image with Tag" to display all images with selected tag(s) in chosen directory
